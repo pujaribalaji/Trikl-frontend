@@ -49,9 +49,8 @@ body {
 }
 
 .new-add-btn {
-  border-radius: 25px;
   padding: 10px 30px;
-  background-color: #008dc0;
+  background-color: #d4f0f9;
   border: none;
   font-size: 20px;
   font-weight: 700;
@@ -63,7 +62,7 @@ body {
 .new-add-btn-1 {
   border-radius: 15px;
   height: 30px;
-  background-color: #008dc0;
+  background-color: #d4f0f9;
   border: none;
   font-size: 25px;
   font-weight: 700;
@@ -129,7 +128,6 @@ body {
   display: inline-block;
   overflow: hidden;
 }
-
 .new-text-overlays {
   position: absolute;
   top: 23%;
