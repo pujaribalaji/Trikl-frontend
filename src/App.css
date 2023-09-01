@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.new-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.new-grid-container img {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+.new-h1 {
+  color: white;
+  margin-left: 40%;
+  margin-bottom: 30px;
+  font-family: inter;
+  font-weight: 500;
+}
+.new-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.new-box-2 {
+  width: 100%;
+  height: 80vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.new-selected-image {
+  width: 1200px;
+  height: 500px;
+}
+
+.new-text-overlays {
+  position: absolute;
+  top: 23%;
+  left: 33%;
+  transform: translate(-40%, -40%);
+}
+
+.new-add-btn {
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: #008dc0;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.new-add-btn-container {
+  text-align: center;
+  margin-top: 0px;
+}
+.new-add-btn-1 {
+  border-radius: 15px;
+  height: 30px;
+  background-color: #008dc0;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+.new-handle {
+  padding: 4px;
+  cursor: grab;
   color: white;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.new-text-input {
+  border: none;
+  color: white;
+  font-size: 46px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-weight: 1000;
+  padding: 4px;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+.new-react-resizable {
+  position: relative;
+}
+.new-react-resizable-handle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  padding: 0 3px 3px 0;
+  cursor: se-resize;
+}
+.new-text-input button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.new-text-input button:hover {
+  background-color: #2980b9;
+}
+.new-text-input-1 {
+  outline: none;
+  height: 29px;
+}
+.new-image-with-text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-text-overlays {
+  position: absolute;
+  top: 23%;
+  left: 33%;
+  transform: translate(-40%, -40%);
 }
